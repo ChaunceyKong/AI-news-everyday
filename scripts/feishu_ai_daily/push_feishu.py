@@ -210,7 +210,7 @@ def main():
     parser.add_argument("--webhook", help="飞书自定义机器人的 Webhook URL")
     parser.add_argument("--secret", help="飞书自定义机器人的安全设置签名密钥 (可选)")
     parser.add_argument("--mode", default="selected", choices=["selected", "all", "hot"], help="资讯模式: selected(精选，默认), all(全量), hot(最热话题榜)")
-    parser.add_argument("--limit", type=int, default=8, help="推送条数 (默认 8 条)")
+    parser.add_argument("--limit", type=int, default=20, help="推送条数 (默认 20 条)")
     parser.add_argument("--window", default="24h", choices=["24h", "7d"], help="时间窗口 (默认 24h)")
     parser.add_argument("--dry-run", action="store_true", help="演练模式，仅打印卡片内容而不向飞书发送")
     args = parser.parse_args()
