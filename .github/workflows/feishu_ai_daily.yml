@@ -23,4 +23,4 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
         run: |
-          python scripts/feishu_ai_daily/push_feishu.py --limit 8
+          python scripts/feishu_ai_daily/push_feishu.py --limit 20
